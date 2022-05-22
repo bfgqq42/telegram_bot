@@ -1,10 +1,8 @@
 import sqlite3
 import os
 
-file = 'call-to.db'
 
-
-def create_db():
+def create_db(file):
     con = sqlite3.connect(file)
     cur = con.cursor()
     cur.execute('''CREATE TABLE stocks
@@ -13,9 +11,11 @@ def create_db():
     con.close()
 
 
-def save_data(data: list):
+def save_data(data: list, dbname: str):
+    file = f'db/{dbname}.db'
+
     if file not in os.listdir(os.curdir):
-        create_db()
+        create_db(file)
 
     con = sqlite3.connect(file)
     cur = con.cursor()
