@@ -43,8 +43,6 @@ def start(message):
     elif message.text == 'Добрый день':
         bot.send_message(user, 'Выбери одно из интересующих тебя направлений /Bakalavriat, /Magistratura, /dop_info')
 
-
-
     elif message.text == '/Bakalavriat':
         keyboard = types.InlineKeyboardMarkup()
         button1 = create_button('bakal', '1')
