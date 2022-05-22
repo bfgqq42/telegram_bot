@@ -36,7 +36,7 @@ def start(message):
     issued_command(message.text)
     if message.text == '/help':
         bot.send_message(user, 'Выбери одно из интересующих тебя направлений /Bakalavriat, /Magistratura, /dop_info')
-    elif message.text == 'Шальной прибор':
+    elif message.text == 'Здравствуй':
         bot.send_message(user, 'Выбери одно из интересующих тебя направлений /Bakalavriat, /Magistratura, /dop_info')
     elif message.text == 'Здарова':
         bot.send_message(user, 'Выбери одно из интересующих тебя направлений /Bakalavriat, /Magistratura, /dop_info')
