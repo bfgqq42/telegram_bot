@@ -3,6 +3,11 @@ import os
 
 
 def create_db(file):
+    """
+    Создание файла базы данных.
+
+    :return: нету
+    """
     con = sqlite3.connect(file)
     cur = con.cursor()
     cur.execute('''CREATE TABLE stocks
@@ -12,6 +17,12 @@ def create_db(file):
 
 
 def save_data(data: list, dbname: str):
+    """
+    Проверка на наличие файла базы данных.
+    Вписывание в базу данных.
+
+    :return: нету
+    """
     file = f'db/{dbname}.db'
 
     if file not in os.listdir(os.curdir):

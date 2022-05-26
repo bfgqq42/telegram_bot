@@ -1,129 +1,90 @@
 import telebot
-from telebot import TeleBot, types
 
+from lib import *
+from data.json_work import read
 from Bd.registration import Register
 
+# bot configuration
 token = '5311880278:AAHyAHNG3feWC-aQuj_N5zSOAeU-qOQIfRI'
-bot: TeleBot = telebot.TeleBot(token)
+bot: telebot.TeleBot = telebot.TeleBot(token)
 
+# keyboards
+help_keyboard = types.InlineKeyboardMarkup(row_width=1).add(*[
+    create_button('Бакалавриат', 'basic-bach'),
+    create_button('Магистратура', 'basic-magi'),
+    create_button('Доп. информация', 'basic-auxi')
+])
 
-def issued(reason, text):
-    """
-    Выведение в консоль информации.
+bach_keyboard = types.InlineKeyboardMarkup(row_width=1).add(*[
+    create_button('1. Какой срок обучения?', 'bach-ask_1'),
+    create_button('2. Какая стоимость обучения?', 'bach-ask_2'),
+    create_button('3. Есть ли бюджетные места?', 'bach-ask_3'),
+    create_button('4. Какие вступительные экзамены необходимы для поступления?', 'bach-ask_4'),
+    create_button('5. Какие документы необходимо подать в вуз?', 'bach-ask_5'),
+    create_button('6. Какие экзамены нужны для поступления на ЦифрЭк?', 'bach-ask_6'),
+    create_button('7. Предоставляется ли общежитие?', 'bach-ask_7'),
+    create_button('8. Какой проходной бал при поступлении?', 'bach-ask_8'),
+    create_button('9. Как и когда можно заключить договор?', 'bach-ask_9'),
+    create_button('10. Есть ли военная кафедра и как на нее поступить?', 'bach-ask_10')
+])
 
-    :return: нету
-    """
-    print(f"> Вызван код {reason} для причины \'{text}\'" if text else "> Комманда отсутствует.")
+magi_keyboard = types.InlineKeyboardMarkup(row_width=1).add(*[
+    create_button('1. Какой срок обучения?', 'magi-ask_1'),
+    create_button('2. Какая стоимость обучения?', 'magi-ask_2'),
+    create_button('3. Есть ли бюджетные места?', 'magi-ask_3'),
+    create_button('4. Есть ли военная кафедра?', 'magi-ask_4'),
+    create_button('5. Какой проходной бал при поступлении', 'magi-ask_5'),
+    create_button('6. Какие экзамены необходимы для сдачи?', 'magi-ask_6'),
+    create_button('7. Предоставляется ли общежитие?', 'magi-ask_7'),
+    create_button('8. Подробнее о программе', 'magi-ask_8'),
+    create_button('9. Как и когда можно заключить договор?', 'magi-ask_9'),
+    create_button('10. Другое. Напиши свой вопрос', 'magi-ask_10')
+])
 
+auxi_keyboard = types.InlineKeyboardMarkup(row_width=1).add(*[
+    create_button('1. International course (на английском языке)', 'auxi-ask_1'),
+    create_button('2. ДПО ЦифрЭк в АПК (252 часа)', 'auxi-ask_2'),
+    create_button('3. MBA Executive', 'auxi-ask_3'),
+    create_button('4. Startup-студия', 'auxi-ask_4'),
+    create_button('5. Консалтинг', 'auxi-ask_5'),
+    create_button('6. Хочу стать партнёром ЦифрЭк', 'auxi-ask_6'),
+    create_button('7. Контакты', 'auxi-ask_7'),
+    create_button('8. Попасть на сайт ЦифрЭк', 'auxi-ask_8'),
+    create_button('9. Как добраться в ЦифрЭк', 'auxi-ask_9'),
+    create_button('10. Другое. Задать свой вопрос.', 'auxi-ask_10')
+])
 
-def default_button(text, call):
-    """
-    Функция возвращает кнопку с заданным callback.
+spec_keyboard = {'bach': bach_keyboard, 'magi': magi_keyboard, 'auxi': auxi_keyboard}
+answers = {'bach': read('bach'), 'magi': read('magi'), 'auxi': read('auxi')}
 
-    :return: InlineKeyboardButton
-    """
-    return types.InlineKeyboardButton(text=text, callback_data=call)
-
-
-def create_button(folder, text):
-    """
-    Функция возвращает кнопку с заданным callback для вопросов.
-
-    :return: InlineKeyboardButton
-    """
-    return types.InlineKeyboardButton(text=text, callback_data=f'{folder}-ask_{text}')
-
-
-def create_button_array(folder, num):
-    """
-    Function gives button array with custom callback for each button.
-
-    :return: list of InlineKeyboardButton
-    """
-    return [create_button(folder, i + 1) for i in range(num)]
-
-
-def fill_keyboard(buttons, width):
-    """
-    Function gives an inline keyboard consisting of buttons with line_num row size.
-
-    :return: InlineKeyboardMarkup - consist of buttons, [line_num] row size
-    """
-    return types.InlineKeyboardMarkup(row_width=width).add(*buttons)
+# shortcut texts
+main_text = 'Нажми кнопку с цифрой интересующего тебя вопроса:\n' \
+            'Eсли хочешь оставить заявку чтобы тебе перезвонили по данному вопросу напиши'
 
 
 @bot.callback_query_handler(func=lambda call: True)
 def callback(call):
+    issued("callback", call.data)
+
     if 'ask' in call.data:
-        folder, file = call.data.split('-')
-        with open(f'data/{folder}/{file}.txt', 'r', encoding='utf-8') as f:
-            bot.send_message(call.message.chat.id, f.read())
-        issued("callback", call.data)
+        spec, name = call.data.split('-')
+
+        bot.send_message(call.message.chat.id, answers[spec][name],
+                         reply_markup=types.InlineKeyboardMarkup(row_width=1).add(*[
+                             create_button('Вернуться назад', f'return-{spec}')
+                         ]))
+
     elif 'basic' in call.data:
         text = call.data.split('-')[1]
-        if text == 'bach':
-            bot.send_message(call.message.chat.id, 'Нажми кнопку с цифрой интересующего тебя вопроса:\n\n'
-                                                   '1. Какой срок обучения?\n'
-                                                   '2. Какая стоимость обучения?\n'
-                                                   '3. Есть ли бюджетные места?\n'
-                                                   '4. Какие вступительные экзамены необходимы для поступления?\n'
-                                                   '5. Какие документы необходимо подать в вуз?\n'
-                                                   '6. Какие экзамены нужны для поступления на ЦифрЭк?\n'
-                                                   '7. Предоставляется ли общежитие?\n'
-                                                   '8. Какой проходной бал при поступлении?\n'
-                                                   '9. Как и когда можно заключить договор?\n'
-                                                   '10. Есть ли военная кафедра и как на нее поступить?\n\n'
-                                                   'Eсли хочешь оставить заявку чтобы тебе перезвонили по данному вопросу напиши /reg_bach\n',
-                             reply_markup=bach_keyboard)
 
-        elif text == 'magi':
-            bot.send_message(call.message.chat.id, 'Нажми кнопку с цифрой интересующего тебя вопроса:\n\n'
-                                                   '1. Какой срок обучения?\n'
-                                                   '2. Какая стоимость обучения?\n'
-                                                   '3. Есть ли бюджетные места?\n'
-                                                   '4. Есть ли военная кафедра?\n'
-                                                   '5. Какой проходной бал при поступлении\n'
-                                                   '6. Какие экзамены необходимы для сдачи?\n'
-                                                   '7. Предоставляется ли общежитие?'
-                                                   '8. Подробнее о программе\n'
-                                                   '9. Как и когда можно заключить договор?\n'
-                                                   '10. Другое. Напиши свой вопрос\n\n'
-
-                                                   'Eсли хочешь оставить заявку чтобы тебе перезвонили по данному вопросу напиши /reg_magi\n',
-                             reply_markup=magi_keyboard)
-
-        elif text == 'auxi':
-            bot.send_message(call.message.chat.id, 'Нажми кнопку с цифрой интересующего тебя вопроса:\n\n'
-                                                   '1. International course (на английском языке)\n'
-                                                   '2. ДПО ЦифрЭк в АПК (252 часа)\n'
-                                                   '3. MBA Executive\n'
-                                                   '4. Startup-студия\n'
-                                                   '5. Консалтинг\n'
-                                                   '6. Хочу стать партнёром ЦифрЭк\n'
-                                                   '7. Контакты\n'
-                                                   '8. Попасть на сайт ЦифрЭк\n'
-                                                   '9. Как добраться в ЦифрЭк\n'
-                                                   '10. Другое. Задать свой вопрос.\n\n'
-
-                                                   'Eсли хочешь оставить заявку чтобы тебе перезвонили по данному вопросу напиши /reg_auxi\n',
-                             reply_markup=auxi_keyboard)
+        if text in ['bach', 'magi', 'auxi']:
+            bot.send_message(call.message.chat.id, main_text+f' /reg_{text}\n', reply_markup=spec_keyboard[text])
         else:
             bot.send_message(call.message.chat.id, 'Простите, я вас не понимаю. Напишите /help')
 
-
-help_keyboard = types.InlineKeyboardMarkup(row_width=1).add(*[
-    default_button('Бакалавриат',     'basic-bach'),
-    default_button('Магистратура',    'basic-magi'),
-    default_button('Доп. информация', 'basic-auxi')
-])
-
-rows = 3
-bach_questions = 10
-bach_keyboard = fill_keyboard(create_button_array('bach', bach_questions), rows)
-magi_questions = 10
-magi_keyboard = fill_keyboard(create_button_array('magi', magi_questions), rows)
-auxi_questions = 10
-auxi_keyboard = fill_keyboard(create_button_array('auxi', auxi_questions), rows)
+    elif 'return' in call.data:
+        text = call.data.split('-')[1]
+        bot.send_message(call.message.chat.id, main_text+f' /reg_{text}\n', reply_markup=spec_keyboard[text])
 
 
 @bot.message_handler(content_types=['text'])
@@ -132,7 +93,7 @@ def start(message):
     text = message.text
     issued("command", message.text)
 
-    if text in ['/start', 'Здравствуй', 'Здарова', 'Добрый день']:
+    if text in ['/help', '/start', 'Здравствуй', 'Здарова', 'Добрый день']:
         bot.send_message(user, 'Выбери одно из интересующих тебя направлений:', reply_markup=help_keyboard)
     elif '/reg' in text and len(text) > 5:
         dbname = text.split('_')[1]
@@ -143,8 +104,9 @@ def start(message):
 
 
 if __name__ == '__main__':
-    try:
-        print('> Bot started successfully!')
-        bot.polling()
-    except Exception as e:
-        print(f'> Exception caught "{e}"')
+    print('> Bot started successfully!')
+    bot.polling()
+    # try:
+    #
+    # except Exception as e:
+    #     print(f'> Exception caught "{e}"')
