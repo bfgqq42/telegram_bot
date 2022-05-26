@@ -8,12 +8,17 @@ bot: TeleBot = telebot.TeleBot(token)
 
 
 def issued(reason, text):
-    print(f"> Issued {reason} for \'{text}\'" if text else "Command is None")
+    """
+    Выведение в консоль информации.
+
+    :return: нету
+    """
+    print(f"> Вызван код {reason} для причины \'{text}\'" if text else "> Комманда отсутствует.")
 
 
 def default_button(text, call):
     """
-    Function gives button with callback.
+    Функция возвращает кнопку с заданным callback.
 
     :return: InlineKeyboardButton
     """
@@ -22,7 +27,7 @@ def default_button(text, call):
 
 def create_button(folder, text):
     """
-    Function gives button with custom callback.
+    Функция возвращает кнопку с заданным callback для вопросов.
 
     :return: InlineKeyboardButton
     """
@@ -107,7 +112,7 @@ def callback(call):
 
 
 help_keyboard = types.InlineKeyboardMarkup(row_width=1).add(*[
-    default_button('Как и когда можно заключить договор?',     'basic-bach'),
+    default_button('Бакалавриат',     'basic-bach'),
     default_button('Магистратура',    'basic-magi'),
     default_button('Доп. информация', 'basic-auxi')
 ])
