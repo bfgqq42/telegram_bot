@@ -1,5 +1,6 @@
 import sqlite3
 import os
+import time
 
 
 def create_db(file):
@@ -11,7 +12,7 @@ def create_db(file):
     con = sqlite3.connect(file)
     cur = con.cursor()
     cur.execute('''CREATE TABLE stocks
-                               (name text, last_name text, age text, phone text)''')
+                               (date text,name text, last_name text, age text, phone text)''')
     con.commit()
     con.close()
 
@@ -25,12 +26,14 @@ def save_data(data: list, dbname: str):
     """
     file = f'db/{dbname}.db'
 
-    if file not in os.listdir(os.curdir):
+    print(os.listdir('db'))
+
+    if f'{dbname}.db' not in os.listdir('db'):
         create_db(file)
 
     con = sqlite3.connect(file)
     cur = con.cursor()
-    cur.execute(f"INSERT INTO stocks VALUES ('{data[0]}','{data[1]}','{data[2]}','{data[3]}')")
+    cur.execute(f"INSERT INTO stocks VALUES ('{time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))}','{data[0]}','{data[1]}','{data[2]}','{data[3]}')")
     con.commit()
     con.close()
 
