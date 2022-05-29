@@ -7,7 +7,7 @@ def count_n(s):
 
 
 all_dir = 'text'
-directories = [f'{all_dir}/bach', f'{all_dir}/magi', f'{all_dir}/auxi']
+directories = [f'{all_dir}/bach', f'{all_dir}/magi', f'{all_dir}/inter', f'{all_dir}/dpo', f'{all_dir}/mba', f'{all_dir}/startup', f'{all_dir}/dobav', f'{all_dir}/drugoe']
 
 
 def write(direc):
@@ -62,7 +62,14 @@ def main():
     write(directories)
     print(read('bach'))
     print(read('magi'))
-    print(read('auxi'))
+    print(read('inter'))
+    print(read('dpo'))
+    print(read('mba'))
+    print(read('startup'))
+    print(read('kasal'))
+    print(read('popas'))
+    print(read('dobav'))
+    print(read('drugoe'))
 
 
 if __name__ == '__main__':
