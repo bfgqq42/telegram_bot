@@ -8,7 +8,7 @@ from Bd.libraries.registration import Register
 
 
 # bot configuration
-token = '5311880278:AAHyAHNG3feWC-aQuj_N5zSOAeU-qOQIfRI'
+token = '5421671179:AAFLiNjDx55fJznLjLDn-g8xZaC6bzoF8t4'
 bot: telebot.TeleBot = telebot.TeleBot(token)
 
 
