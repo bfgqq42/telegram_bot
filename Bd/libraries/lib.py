@@ -37,7 +37,13 @@ def search_ask(keyboards: dict, call: str) -> str:
     for i in keyboards.values():
         for j in i.keyboard:
             if call == j[0].callback_data:
-                return i[0].text
+                return j[0].text
+
+
+def format_text(text: str, modes: list) -> str:
+    for i in modes:
+        text = f'<{i}>{text}</{i}>'
+    return text
 
 
 class MultiDict:
@@ -53,7 +59,7 @@ class MultiDict:
         if mode == 1 or mode == 0:
             for i in self.lst:
                 if i[mode] == value:
-                    return i[1-mode]
+                    return i[1 - mode]
             raise Exception('Not found key in selected mode and list')
         raise Exception('Wrong mode selected')
 
@@ -61,4 +67,3 @@ class MultiDict:
         if mode == 1 or mode == 0:
             return [i[mode] for i in self.lst]
         raise Exception('Wrong mode selected')
-

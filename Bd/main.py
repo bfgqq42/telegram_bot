@@ -4,7 +4,7 @@ from Bd.presets.keyboards import *
 from Bd.libraries.lib import *
 
 from data.json_work import read
-from Bd.libraries.registration import Register
+from Bd.libraries.registration import *
 
 
 # bot configuration
@@ -14,22 +14,19 @@ bot: telebot.TeleBot = telebot.TeleBot(token)
 
 # shortcuts
 main_text = 'Нажми кнопку с цифрой интересующего тебя вопроса:\n' \
-            'Eсли хочешь оставить заявку чтобы тебе перезвонили по данному вопросу напиши'
+            'Eсли хочешь оставить заявку, чтобы тебе позвонили по интересующему тебя вопросу нажми на Задать свой вопрос'
 
 shortcut = MultiDict(
+    ['eshko', 'ЭШКО Young'],
     ['bach', 'Бакалавриат'],
     ['magi', 'Магистратура'],
     ['inter', 'International course (на английском языке)'],
     ['dpo', 'ДПО ЦифрЭк в АПК (252 часа)'],
-    ['mba', 'MBA Executive'],
-    ['startup', 'Startup-студия'],
-    ['kasal', 'Консалтинг'],
-    ['popas', 'Хочу стать партнёром ЦифрЭк'],
-    ['dobav', 'Как добраться в ЦифрЭк'],
     ['drugoe', 'Другое. Задать свой вопрос.']
 )
 
 all_keyboards = {
+    'eshko': eshko_keyboard,
     'bach': bach_keyboard,
     'magi': magi_keyboard,
     'inter': inter_keyboard,
@@ -38,6 +35,7 @@ all_keyboards = {
 }
 
 ask_answers = {
+    'eshko': read('eshko'),
     'bach': read('bach'),
     'magi': read('magi'),
     'inter': read('inter'),
@@ -66,12 +64,23 @@ def callback(call):
         text = call.data.split('-')[1]
 
         bot.send_message(chat_id=call.message.chat.id,
-                         text=f'<u><i><b>{shortcut.get_value(text, 0)}</b></i></u>\n' + main_text + f' /reg_{text}\n',
+                         text=f'{format_text(shortcut.get_value(text, 0), "uib")}\n' + main_text + f' /reg_{text}\n',
                          reply_markup=all_keyboards[text], parse_mode='HTML')
 
     elif 'reg' in call.data:
         dbname = call.data.split('-')[1]
-        Register(bot, call.message, call.from_user.id, dbname)
+        if dbname == 'eshko':
+            RegisterEshko(bot, call.message, call.from_user.id, dbname)
+        elif dbname == 'bach':
+            RegisterBachMagi(bot, call.message, call.from_user.id, dbname)
+        elif dbname == 'magi':
+            RegisterBachMagi(bot, call.message, call.from_user.id, dbname)
+        elif dbname == 'inter':
+            RegisterInter(bot, call.message, call.from_user.id, dbname)
+        elif dbname == 'dpo':
+            RegisterDPO(bot, call.message, call.from_user.id, dbname)
+        elif dbname == 'drugoe':
+            RegisterDrugoe(bot, call.message, call.from_user.id, dbname)
 
 
 @bot.message_handler(content_types=['text'])
