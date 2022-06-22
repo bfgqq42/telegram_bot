@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2bea38cb-a899-490e-aa22-20a8ab6150b5" name="Changes" comment="Изменения:&#10;...">
+      <change beforePath="$PROJECT_DIR$/Bd/data/gen/bach.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/data/gen/bach.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bd/data/gen/magi.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/data/gen/magi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bd/libraries/registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/libraries/registration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bd/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bd/presets/keyboards.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/presets/keyboards.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="48189fe7-1e95-47b9-a661-c038205b44b5" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/venv/Lib/site-packages/pip/_vendor/pep517/envbuild.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="28RIq6OyjruZVraXuCWrIgfDwL8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hp/PycharmProjects/telegram_bot-master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\PycharmProjects\Либот - копия\Bd\data\gen" />
+      <recent name="C:\Users\hp\PycharmProjects\Лябот — копия\Bd\data\gen" />
+      <recent name="C:\Users\hp\PycharmProjects\Лябот — копия\Bd\data\auxi" />
+      <recent name="C:\Users\hp\PycharmProjects\Лябот — копия\Bd\data\bach" />
+      <recent name="C:\Users\hp\PycharmProjects\Лябот — копия\Bd\data\magi" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\PycharmProjects\Либот - копия\Bd\presets" />
+      <recent name="C:\Users\hp\PycharmProjects\Либот - копия\Bd\libraries" />
+      <recent name="C:\Users\hp\PycharmProjects\Либот - копия\Bd" />
+      <recent name="C:\Users\hp\PycharmProjects\Лябот — копия\Bd\data\bakal" />
+      <recent name="C:\Users\hp\PycharmProjects\Лябот\Bd" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main (1)">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Лябот — копия" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Bd" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bd/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Боты" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Новая папка" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Новая папка/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Боты" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="registration" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Лябот — копия" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Bd/libraries" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bd/libraries/registration.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.registration" />
+        <item itemvalue="Python.main (2)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2bea38cb-a899-490e-aa22-20a8ab6150b5" name="Changes" comment="" />
+      <created>1651173158708</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651173158708</updated>
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1653217989043</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653217989043</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init">
+      <created>1653218585643</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653218585643</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Изменения">
+      <created>1653218732888</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653218732888</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Изменения&#10;- стартовая панель с кнопками&#10;- клавиатуры статически генерируемы">
+      <created>1653243584879</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653243584879</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Изменения&#10;- добавлен текст к magi&#10;- изменена стартовая команда">
+      <created>1653249100598</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653249100598</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Изменения&#10;- добавлен текст к magi&#10;- изменена стартовая команда">
+      <created>1653564722797</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653564722797</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Изменения&#10;- изменения документации">
+      <created>1653584972153</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1653584972153</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Изменения&#10;- были добавлены кнопки главного меню с под темами и ответами: inter, dpo, mba, startup, kasal, drugoe.">
+      <created>1653867061492</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1653867061492</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Изменения&#10;- разделение модулей на папки&#10;- регистрация теперь в виде кнопки под каждым блоком информации&#10;- в регистрацию добавлен текст задаваемого вопроса&#10;- клавиатуры в отдельном файле в виде констант&#10;- структура для словаря с задаваемым ключом в методах&#10;- функция поиска названия вопроса во всех клавиатурах">
+      <created>1654117978593</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1654117978593</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Изменения&#10;- заменен токен чат бота">
+      <created>1654119440353</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1654119440353</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Изменения:&#10;...">
+      <created>1654566688661</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1654566688661</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <MESSAGE value="Изменения" />
+    <MESSAGE value="Изменения&#10;- стартовая панель с кнопками&#10;- клавиатуры статически генерируемы" />
+    <MESSAGE value="Изменения&#10;- добавлен текст к magi&#10;- изменена стартовая команда" />
+    <MESSAGE value="Изменения&#10;- изменения документации" />
+    <MESSAGE value="Изменения&#10;- были добавлены кнопки главного меню с под темами и ответами: inter, dpo, mba, startup, kasal, drugoe." />
+    <MESSAGE value="Изменения&#10;- разделение модулей на папки&#10;- регистрация теперь в виде кнопки под каждым блоком информации&#10;- в регистрацию добавлен текст задаваемого вопроса&#10;- клавиатуры в отдельном файле в виде констант&#10;- структура для словаря с задаваемым ключом в методах&#10;- функция поиска названия вопроса во всех клавиатурах" />
+    <MESSAGE value="Изменения&#10;- заменен токен чат бота" />
+    <MESSAGE value="Изменения:&#10;..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменения:&#10;..." />
+  </component>
+</project>

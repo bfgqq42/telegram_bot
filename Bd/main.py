@@ -14,7 +14,7 @@ bot: telebot.TeleBot = telebot.TeleBot(token)
 
 # shortcuts
 main_text = 'Нажми кнопку с цифрой интересующего тебя вопроса:\n' \
-            'Eсли хочешь оставить заявку, чтобы тебе позвонили по интересующему тебя вопросу нажми на Задать свой вопрос'
+            'Eсли хочешь оставить заявку, чтобы тебе позвонили по интересующему тебя вопросу нажми на кнопку Зарегистрироваться'
 
 shortcut = MultiDict(
     ['eshko', 'ЭШКО Young'],
@@ -54,7 +54,7 @@ def callback(call):
         text = search_ask(all_keyboards, call.data)
 
         bot.send_message(chat_id=call.message.chat.id,
-                         text=f'<u><i><b>{text}</b></i></u>\n' + ask_answers[spec][name],
+                         text=f'<b>{text}</b>\n' + ask_answers[spec][name],
                          reply_markup=types.InlineKeyboardMarkup(row_width=1).add(*[
                              create_button('Вернуться назад', f'return-{spec}')
                          ]),
@@ -64,7 +64,7 @@ def callback(call):
         text = call.data.split('-')[1]
 
         bot.send_message(chat_id=call.message.chat.id,
-                         text=f'{format_text(shortcut.get_value(text, 0), "uib")}\n' + main_text + f' /reg_{text}\n',
+                         text=f'{format_text(shortcut.get_value(text, 0), "uib")}\n' + main_text,
                          reply_markup=all_keyboards[text], parse_mode='HTML')
 
     elif 'reg' in call.data:
@@ -95,7 +95,7 @@ def start(message):
     elif message.text in shortcut.get_data(1):
         name = shortcut.get_value(message.text, 1)
         bot.send_message(chat_id=message.from_user.id,
-                         text=f'<u><i><b>{message.text}</b></i></u>\n' + main_text + f' /reg_{name}\n',
+                         text=f'<b>{message.text}</b>\n' + main_text,
                          reply_markup=all_keyboards[name], parse_mode='HTML')
 
     else:

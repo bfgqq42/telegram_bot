@@ -9,20 +9,16 @@ help_keyboard = types.ReplyKeyboardMarkup(row_width=1).add(*[
     create_button('Магистратура', 'basic-magi'),
     create_button('International course (на английском языке)', 'basic-inter'),
     create_button('ДПО ЦифрЭк в АПК (252 часа)', 'basic-dpo'),
-    create_button('MBA Executive', 'basic-mba'),
-    create_button('Startup-студия', 'basic-startup'),
-    create_button('Консалтинг', 'basic-kasal'),
     create_button('Другое. Задать свой вопрос.', 'basic-drugoe'),
 
-    create_button('Задай свой вопрос.', 'reg-help'),
 ])
 
 eshko_keyboard = types.InlineKeyboardMarkup(row_width=1).add(*[
-    create_button('1. Какой срок обучения?', 'esko-ask_1'),
-    create_button('2. Какая стоимость обучения?', 'esko-ask_2'),
-    create_button('3. Есть ли бюджетные места?', 'esko-ask_3'),
-    create_button('4. Какие экзамены необходимы для поступления?', 'esko-ask_4'),
-    create_button('5. Какие документы необходимо подать в вуз?', 'esko-ask_5'),
+    create_button('1. Какой срок обучения?', 'eshko-ask_1'),
+    create_button('2. Какая стоимость обучения?', 'eshko-ask_2'),
+    create_button('3. Есть ли бюджетные места?', 'eshko-ask_3'),
+    create_button('4. Какие экзамены необходимы для поступления?', 'eshko-ask_4'),
+    create_button('5. Какие документы необходимо подать в вуз?', 'eshko-ask_5'),
 
     create_button('Зарегистрироваться', 'reg-eshko'),
 ])
@@ -37,6 +33,8 @@ bach_keyboard = types.InlineKeyboardMarkup(row_width=1).add(*[
     create_button('7. Какой проходной бал при поступлении?', 'bach-ask_7'),
     create_button('8. Как и когда можно заключить договор?', 'bach-ask_8'),
     create_button('9. Есть ли военная кафедра и как на нее поступить?', 'bach-ask_9'),
+
+    create_button('Зарегистрироваться', 'reg-bach'),
 ])
 
 magi_keyboard = types.InlineKeyboardMarkup(row_width=1).add(*[
@@ -50,6 +48,8 @@ magi_keyboard = types.InlineKeyboardMarkup(row_width=1).add(*[
     create_button('8. Как и когда можно заключить договор?', 'magi-ask_8'),
     create_button('9. Подробнее о программе', 'magi-ask_9'),
     create_button('10. Другое. Напиши свой вопрос', 'magi-ask_10'),
+
+    create_button('Зарегистрироваться', 'reg-magi'),
 ])
 
 inter_keyboard = types.InlineKeyboardMarkup(row_width=1).add(*[
@@ -62,6 +62,8 @@ inter_keyboard = types.InlineKeyboardMarkup(row_width=1).add(*[
     create_button('7. More about the program', 'inter-ask_7'),
     create_button('8. How and when to conclude a contract?', 'inter-ask_8'),
     create_button('9. Other. Write your question.', 'inter-ask_9'),
+
+    create_button('Register ', 'reg-inter'),
 ])
 
 dpo_keyboard = types.InlineKeyboardMarkup(row_width=1).add(*[
@@ -69,6 +71,8 @@ dpo_keyboard = types.InlineKeyboardMarkup(row_width=1).add(*[
     create_button('2. Блоки преподаваемых дисциплин', 'dpo-ask_2'),
     create_button('3. Стоимость обучения', 'dpo-ask_3'),
     create_button('4. Подробнее о программе. Ригистрация', 'dpo-ask_4'),
+
+    create_button('Зарегистрироваться', 'reg-dpo'),
 ])
 
 
