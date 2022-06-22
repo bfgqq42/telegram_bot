@@ -250,7 +250,7 @@ class RegisterInter:
         self.user = user
         self.bot, self.dbname = bot, dbname
         self.name_surname, self.abit, self.apply, self.phone, self.city = '', '', '', '', ''
-        self.bot.send_message(self.user, 'Начнем заполнять заявку!\n'
+        self.bot.send_message(self.user, 'Lets start filling out the application!\n'
                                          'Напишите Фамилию и Имя')
         self.bot.register_next_step_handler(message, self.get_name)
 

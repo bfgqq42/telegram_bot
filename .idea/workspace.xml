@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bea38cb-a899-490e-aa22-20a8ab6150b5" name="Changes" comment="Изменения:&#10;...">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bd/data/gen/bach.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/data/gen/bach.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bd/data/gen/drugoe.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/data/gen/drugoe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bd/data/gen/eshko.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/data/gen/eshko.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bd/data/gen/magi.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/data/gen/magi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bd/db/bach.db" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/db/bach.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bd/libraries/registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/libraries/registration.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bd/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bd/presets/keyboards.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/presets/keyboards.py" afterDir="false" />
@@ -249,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654566688661</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Изменения:&#10;...">
+      <created>1655888158958</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1655888158958</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
