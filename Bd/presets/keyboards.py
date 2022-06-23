@@ -33,7 +33,7 @@ bach_keyboard = types.InlineKeyboardMarkup(row_width=1).add(*[
     create_button('8. Как и когда можно заключить договор?', 'bach-ask_8'),
     create_button('9. Есть ли военная кафедра и как на нее поступить?', 'bach-ask_9'),
 
-    create_button('Зарегистрироваться', 'reg-bach'),
+    create_button('Обратная связь', 'reg-bach'),
 ])
 
 magi_keyboard = types.InlineKeyboardMarkup(row_width=1).add(*[
