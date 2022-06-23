@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bea38cb-a899-490e-aa22-20a8ab6150b5" name="Changes" comment="Изменения:&#10;...">
+    <list default="true" id="2bea38cb-a899-490e-aa22-20a8ab6150b5" name="Changes" comment="Изменения:&#10;Текст">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/data/gen/bach.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/data/gen/bach.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/data/gen/drugoe.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/data/gen/drugoe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/data/gen/eshko.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/data/gen/eshko.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/data/gen/magi.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/data/gen/magi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/db/bach.db" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/db/bach.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bd/db/bach.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bd/db/eshko.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Bd/libraries/registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/libraries/registration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/presets/keyboards.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/presets/keyboards.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655888158958</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Изменения:&#10;Текст">
+      <created>1655932668614</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1655932668614</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -296,6 +298,7 @@
     <MESSAGE value="Изменения&#10;- разделение модулей на папки&#10;- регистрация теперь в виде кнопки под каждым блоком информации&#10;- в регистрацию добавлен текст задаваемого вопроса&#10;- клавиатуры в отдельном файле в виде констант&#10;- структура для словаря с задаваемым ключом в методах&#10;- функция поиска названия вопроса во всех клавиатурах" />
     <MESSAGE value="Изменения&#10;- заменен токен чат бота" />
     <MESSAGE value="Изменения:&#10;..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменения:&#10;..." />
+    <MESSAGE value="Изменения:&#10;Текст" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменения:&#10;Текст" />
   </component>
 </project>
