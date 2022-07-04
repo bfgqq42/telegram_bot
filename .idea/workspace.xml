@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bea38cb-a899-490e-aa22-20a8ab6150b5" name="Changes" comment="Изменения:&#10;Текст">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Лябот — копия.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Лябот — кокоп.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/data/gen/asska.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/data/gen/bach.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/data/gen/dpo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/data/gen/drugoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/data/gen/eshko.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/data/gen/inter.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/data/gen/inter.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/data/gen/kasal.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/data/gen/magi.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/data/gen/magi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/data/gen/mba.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/data/gen/startup.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/libraries/registration.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bd/presets/keyboards.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/presets/keyboards.py" afterDir="false" />
-    </list>
+    <list default="true" id="2bea38cb-a899-490e-aa22-20a8ab6150b5" name="Changes" comment="Изменения:&#10;Текст" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +18,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -382,7 +371,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655969565848</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Изменения:&#10;Текст">
+      <created>1656936924568</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1656936924568</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Изменения:&#10;Текст">
+      <created>1656936969435</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1656936969435</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
