@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bea38cb-a899-490e-aa22-20a8ab6150b5" name="Changes" comment="Изменения:&#10;Текст">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Лябот — копия.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Лябот — копия.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bd/data/gen/drugoe.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/data/gen/drugoe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bd/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bd/presets/keyboards.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bd/presets/keyboards.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +24,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="48189fe7-1e95-47b9-a661-c038205b44b5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -258,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655932668614</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Изменения:&#10;Текст">
+      <created>1655972778734</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1655972778734</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

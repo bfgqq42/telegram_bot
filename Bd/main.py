@@ -13,14 +13,14 @@ bot: telebot.TeleBot = telebot.TeleBot(token)
 
 
 # shortcuts
-main_text = 'Eсли хочешь оставить заявку, чтобы тебе позвонили по интересующему тебя вопросу нажми на кнопку Зарегистрироваться'
+main_text = 'Если хочешь задать вопрос или проконсультироваться жми на кнопку «Обратная связь»'
 
 shortcut = MultiDict(
     ['eshko', 'ЭШКО Young'],
     ['bach', 'Бакалавриат'],
     ['magi', 'Магистратура'],
     ['inter', 'International course (на английском языке)'],
-    ['dpo', 'ДПО ЦифрЭк в АПК (252 часа)'],
+    ['dpo', 'Дополнительное образование(252 часа)'],
     ['drugoe', 'Другое']
 )
 
@@ -88,7 +88,7 @@ def start(message):
 
     if message.text in ['/help', '/start', 'Здравствуй', 'Здарова', 'Добрый день']:
         bot.send_message(chat_id=message.from_user.id,
-                         text='Выбери одно из интересующих тебя направлений',
+                         text='Выбери одно из интересующих тебя направлений:',
                          reply_markup=help_keyboard)
 
     elif message.text in shortcut.get_data(1):
